@@ -5,7 +5,7 @@ import 'package:my_portfolio/pages/projects_page.dart';
 import 'package:my_portfolio/pages/contact_page.dart';
 
 void main() {
-  runApp(MyPortfolioApp());
+  runApp(const MyPortfolioApp());
 }
 
 class MyPortfolioApp extends StatelessWidget {
