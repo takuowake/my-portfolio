@@ -12,25 +12,25 @@ class NavBar extends StatelessWidget {
           onPressed: () {
             Navigator.pushNamed(context, '/');
           },
-          child: Text('Home'),
+          child: const Text('Home'),
         ),
         TextButton(
           onPressed: () {
             Navigator.pushNamed(context, '/about');
           },
-          child: Text('About'),
+          child: const Text('About'),
         ),
         TextButton(
           onPressed: () {
             Navigator.pushNamed(context, '/projects');
           },
-          child: Text('Projects'),
+          child: const Text('Projects'),
         ),
         TextButton(
           onPressed: () {
             Navigator.pushNamed(context, '/contact');
           },
-          child: Text('Contact'),
+          child: const Text('Contact'),
         ),
       ],
     );
