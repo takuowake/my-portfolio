@@ -10,12 +10,12 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contact'),
+        title: const Text('Contact'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          NavBar(),
+          const NavBar(),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -25,19 +25,19 @@ class ContactPage extends StatelessWidget {
                   'Get in Touch',
                   style: Theme.of(context).textTheme.headline4,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Text(
                   'If you would like to work with me or have any questions, feel free to reach out!',
                   style: Theme.of(context).textTheme.bodyText1,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Form(
                   key: _formKey,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Name',
                           border: OutlineInputBorder(),
                         ),
@@ -48,9 +48,9 @@ class ContactPage extends StatelessWidget {
                           return null;
                         },
                       ),
-                      SizedBox(height: 16),
+                      const SizedBox(height: 16),
                       TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Email',
                           border: OutlineInputBorder(),
                         ),
@@ -61,10 +61,10 @@ class ContactPage extends StatelessWidget {
                           return null;
                         },
                       ),
-                      SizedBox(height: 16),
+                      const SizedBox(height: 16),
                       TextFormField(
                         maxLines: 5,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Message',
                           border: OutlineInputBorder(),
                         ),
@@ -75,14 +75,14 @@ class ContactPage extends StatelessWidget {
                           return null;
                         },
                       ),
-                      SizedBox(height: 16),
+                      const SizedBox(height: 16),
                       ElevatedButton(
                         onPressed: () {
                           if (_formKey.currentState!.validate()) {
                             // Send email or perform other actions
                           }
                         },
-                        child: Text('Submit'),
+                        child: const Text('Submit'),
                       ),
                     ],
                   ),
@@ -90,7 +90,7 @@ class ContactPage extends StatelessWidget {
               ],
             ),
           ),
-          Spacer(),
+          const Spacer(),
           Footer(),
         ],
       ),
