@@ -8,12 +8,12 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About Me'),
+        title: const Text('About Me'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          NavBar(),
+          const NavBar(),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -23,17 +23,17 @@ class AboutPage extends StatelessWidget {
                   'About Me',
                   style: Theme.of(context).textTheme.headline4,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Text(
                   'I am a passionate developer with experience in Flutter and web technologies. I love creating beautiful and functional applications.',
                   style: Theme.of(context).textTheme.bodyText1,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Text(
                   'Skills:',
                   style: Theme.of(context).textTheme.headline6,
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text(
                   '- Flutter\n- Dart\n- Web Development\n- UI/UX Design',
                   style: Theme.of(context).textTheme.bodyText1,
@@ -41,7 +41,7 @@ class AboutPage extends StatelessWidget {
               ],
             ),
           ),
-          Spacer(),
+          const Spacer(),
           Footer(),
         ],
       ),
