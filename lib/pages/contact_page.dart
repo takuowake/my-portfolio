@@ -24,12 +24,12 @@ class ContactPage extends StatelessWidget {
               children: [
                 Text(
                   'Get in Touch',
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
                 const SizedBox(height: 16),
                 Text(
                   'If you would like to work with me or have any questions, feel free to reach out!',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
                 const SizedBox(height: 16),
                 Form(
