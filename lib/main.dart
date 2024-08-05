@@ -9,6 +9,8 @@ void main() {
 }
 
 class MyPortfolioApp extends StatelessWidget {
+  const MyPortfolioApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,10 +22,10 @@ class MyPortfolioApp extends StatelessWidget {
           bodyLarge: TextStyle(fontSize: 18, color: Colors.grey[800]),
         ),
       ),
-      home: HomePage(),
+      home: const HomePage(),
       routes: {
-        '/about': (context) => AboutPage(),
-        '/projects': (context) => ProjectsPage(),
+        '/about': (context) => const AboutPage(),
+        '/projects': (context) => const ProjectsPage(),
         '/contact': (context) => ContactPage(),
       },
     );
