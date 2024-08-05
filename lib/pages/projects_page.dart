@@ -8,10 +8,10 @@ class ProjectsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Projects'),
+        title: const Text('Projects'),
       ),
       body: ListView(
-        children: [
+        children: const [
           ProjectCard(
             title: 'Project 1',
             description: 'Description of Project 1',
