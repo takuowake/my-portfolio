@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/widgets/footer.dart';
 import 'package:my_portfolio/widgets/navbar.dart';
 
 class ContactPage extends StatelessWidget {
@@ -91,7 +92,7 @@ class ContactPage extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          Footer(),
+          const Footer(),
         ],
       ),
     );
