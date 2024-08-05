@@ -7,31 +7,31 @@ class Footer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.grey[900],
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          Text(
+          const Text(
             '© 2024 Your Name',
             style: TextStyle(color: Colors.white),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               IconButton(
-                icon: Icon(Icons.linked_camera, color: Colors.white),
+                icon: const Icon(Icons.linked_camera, color: Colors.white),
                 onPressed: () {
                   // Navigate to your social media page
                 },
               ),
               IconButton(
-                icon: Icon(Icons.message, color: Colors.white),
+                icon: const Icon(Icons.message, color: Colors.white),
                 onPressed: () {
                   // Navigate to your social media page
                 },
               ),
               IconButton(
-                icon: Icon(Icons.share, color: Colors.white),
+                icon: const Icon(Icons.share, color: Colors.white),
                 onPressed: () {
                   // Navigate to your social media page
                 },
