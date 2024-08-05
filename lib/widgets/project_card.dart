@@ -5,7 +5,7 @@ class ProjectCard extends StatelessWidget {
   final String description;
   final String imageUrl;
 
-  ProjectCard({required this.title, required this.description, required this.imageUrl});
+  const ProjectCard({super.key, required this.title, required this.description, required this.imageUrl});
 
   @override
   Widget build(BuildContext context) {
