@@ -4,6 +4,8 @@ import 'package:my_portfolio/widgets/navbar.dart';
 class ContactPage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
+  ContactPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
