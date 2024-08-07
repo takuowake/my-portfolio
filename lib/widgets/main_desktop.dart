@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../constants/colors.dart';
+import 'package:my_portfolio/constants/colors.dart';
 
 class MainDesktop extends StatelessWidget {
   const MainDesktop({super.key});
