@@ -21,34 +21,24 @@ class MainDesktop extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Column(
+          const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // intro message
-              const Text(
-                "Hi,\nI'm Shohruh AK\nA Flutter Developer",
+              Text(
+                "Mobile App Developer",
                 style: TextStyle(
                   fontSize: 30,
                   height: 1.5,
-                  fontWeight: FontWeight.bold,
                   color: CustomColor.whitePrimary,
                 ),
               ),
-              const SizedBox(height: 15),
-              // contact btn
-              SizedBox(
-                width: 250.0,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text("Get in touch"),
-                ),
-              )
+              SizedBox(height: 15),
             ],
           ),
-          // avatar img
           Image.asset(
             "assets/my_flutter_avatar.png",
-            width: screenWidth / 2,
+            width: screenWidth / 3,
           ),
         ],
       ),
